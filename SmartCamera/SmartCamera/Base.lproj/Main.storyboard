@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ObjectClassification" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="10Q-Ys-jO8">
+                                <rect key="frame" x="0.0" y="717" width="414" height="179"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Accuracy:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7bN-kO-Sor">
+                                        <rect key="frame" x="20" y="81" width="374" height="29"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                        <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Object Name" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BUj-Qb-zT4">
+                                        <rect key="frame" x="20" y="10" width="374" height="61"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="23"/>
+                                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstItem="BUj-Qb-zT4" firstAttribute="leading" secondItem="10Q-Ys-jO8" secondAttribute="leading" constant="20" id="5VY-NS-PjD"/>
+                                    <constraint firstItem="BUj-Qb-zT4" firstAttribute="top" secondItem="10Q-Ys-jO8" secondAttribute="top" constant="10" id="5oe-yr-f4w"/>
+                                    <constraint firstItem="7bN-kO-Sor" firstAttribute="leading" secondItem="10Q-Ys-jO8" secondAttribute="leading" constant="20" id="8tS-eR-pT7"/>
+                                    <constraint firstItem="7bN-kO-Sor" firstAttribute="top" secondItem="BUj-Qb-zT4" secondAttribute="bottom" constant="10" id="91S-DZ-vD8"/>
+                                    <constraint firstItem="7bN-kO-Sor" firstAttribute="top" secondItem="BUj-Qb-zT4" secondAttribute="bottom" constant="10" id="VVc-cO-Xx4"/>
+                                    <constraint firstAttribute="bottom" secondItem="BUj-Qb-zT4" secondAttribute="bottom" constant="108" id="Vo1-x0-Sqn"/>
+                                    <constraint firstAttribute="trailing" secondItem="BUj-Qb-zT4" secondAttribute="trailing" constant="20" id="hFK-T4-h00"/>
+                                    <constraint firstAttribute="trailing" secondItem="7bN-kO-Sor" secondAttribute="trailing" constant="20" id="r09-jQ-E9D"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="10Q-Ys-jO8" secondAttribute="bottom" id="2jU-JX-JoP"/>
+                            <constraint firstItem="10Q-Ys-jO8" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="QF2-s2-OmY"/>
+                            <constraint firstItem="10Q-Ys-jO8" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="pfH-h4-3Mi"/>
+                            <constraint firstItem="10Q-Ys-jO8" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.2" id="yhm-L0-M8H"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="ObjectNameLabel" destination="BUj-Qb-zT4" id="zjf-On-7oF"/>
+                        <outlet property="accuracyLabel" destination="7bN-kO-Sor" id="E6S-Wb-N7p"/>
+                        <outlet property="belowView" destination="10Q-Ys-jO8" id="CwS-WT-llg"/>
+                        <outlet property="objectNameLabel" destination="BUj-Qb-zT4" id="c0n-j8-Rhd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="76.339285714285708"/>
+        </scene>
+    </scenes>
+</document>
